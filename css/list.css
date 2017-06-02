@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+body{
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    background: #f1f2f6;
+    font-size: 16px;
+    overflow: scroll;
+}
+.header-box{
+    background:#221236 url(../images/headbg.png) top center;
+    min-width:1100px;
+}
+/*头部导航部分开始*/
+.header{
+    height: 120px;
+    color: #fff;
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+.header .nav{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 45px;
+    text-align: right;
+}
+.nav .navItem{
+    float: left;
+    position: relative;
+    z-index: 666;
+
+}
+.nav .navItem a{
+    float: left;
+    font-size:16px;
+    text-align:center;
+    padding:0 15px;
+    position:relative;
+    cursor:pointer;
+    height:35px;
+}
+.nav .navItem.downnav a{
+    padding:0 40px 0 15px;
+}
+.downnav a .icon{
+    position: absolute;
+    display:block;
+    width:25px;
+    height:25px;
+    right: 6px;
+    top: 0;
+    background:url(../images/nav_xiajiantou.png) no-repeat;
+    z-index: 666;
+}
+.navItem a:hover{
+    background:url(../images/nav_now_bg.png) no-repeat bottom center;
+}
+.now a{
+    background:url(../images/nav_now_bg.png) no-repeat bottom center;}
+.navItem ul{
+    font-size:16px;
+    position:absolute;
+    left:-16px;
+    top:35px;
+    width:180px;
+    line-height:40px;
+    background:#36264a;
+    color:#fff;
+    cursor:pointer;
+    z-index:666;
+    display:none;
+}
+/*.nav .navItem.downnav:hover  ul {
+  display: block;
+}*/
+
+.navItem ul li{
+    text-align:left;
+    padding-left:30px;
+}
+.navItem ul li:hover{
+    color:#fff;
+    padding-left:40px;
+    transition: padding-left 0.4s ease 0s;
+    background:#3498db url(../images/nav_li_bg.png) no-repeat 165px 15px;;
+}
+/*头部导航部分结束*/
+
+/*主要内容区*/
+.bufen{
+    width: 1100px;
+    margin: 0 auto;
+}
+.bufen >img{
+    margin: 0 auto;
+    display: block;
+}
+.bufen >h1, .bufen >h2 {
+    text-align: center;
+    font-size:54px;
+    color:#311759;
+}
+.bufen >h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    letter-spacing:6px;
+}
+
+.content-wrap .list-name{
+    font-size: 30px;
+    color: #311759;
+    height: 70px;
+    line-height: 70px;
+    background:url("../images/list-namebg.png") no-repeat 0 bottom ;
+    text-align: left;
+    position: relative;
+    margin-bottom: 48px;
+}
+.list-name .pen{
+    width: 60px;
+    height: 58px;
+    background: url("../images/pen_list.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top:17px;
+    cursor: pointer;
+}
+.list-name .pen:hover{
+    background-position:-60px 0 ;
+}
+
+.list-content{
+    width: 1130px;
+    overflow: hidden;
+}
+
+/*单个样式*/
+.list-content .content-one{
+    width: 515px;
+    height:204px;
+    float: left;
+    background:#fff;
+    padding:36px 0 0 20px;
+    margin:10px 20px 30px 0;
+    border:1px solid #fff;
+    cursor:pointer;
+    position:relative;
+}
+
+.list-content .content-one:hover{
+    border: 1px solid #86759e;
+    transform: translateY(-8px);
+    transition: all 0.4s ease 0s;
+}
+.content-one .arrow{
+    position: absolute;
+    left: 0;
+    top:36px;
+    width: 14px;
+    height: 9px;
+}
+
+.content-one .image{
+    width: 260px;
+    height: 168px;
+    float: left;
+    overflow: hidden;
+    margin-right: 17px;
+    cursor: pointer;
+}
+.content-one img{
+    width: 260px;
+}
+.content-one:hover .arrow{
+    transition: all 0.4s ease 0s;
+    left: 50px;
+    top:36px
+}
+.content-one .text-box{
+    width: 220px;
+    float: left;
+}
+
+.content-one .small-title{
+    font-size:20px;
+    color:#454548;
+    line-height:26px;
+    max-height:53px;
+    overflow:hidden;
+    padding-top:15px;
+}
+.content-one .date{
+    color:#6b6a6f;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    padding-top:8px;
+}
+.content-one p{
+    padding-top:8px;
+    color:#47464a;
+    line-height:25px;
+    max-height:75px;
+    overflow:hidden;
+    font-family:KaiTi_GB2312;
+    letter-spacing:0px;
+}
+
+.list-more{
+    width: 58px;
+    height: 58px;
+    background: url("../images/lis_more_btn_bg.png") 0 -58px;
+    cursor: pointer;
+    margin: 18px auto 130px;
+}
+.list-more:hover{
+    transition: all 0.3s ease 0s;
+    background-position: 0 0px;
+}

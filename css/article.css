@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+body{
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    background: #f1f2f6;
+    font-size: 16px;
+    overflow: scroll;
+}
+.header-box{
+    background:#221236 url(../images/headbg.png) top center;
+    min-width:1100px;
+}
+/*头部导航部分开始*/
+.header{
+    height: 120px;
+    color: #fff;
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+.header .nav{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 45px;
+    text-align: right;
+}
+.nav .navItem{
+    float: left;
+    position: relative;
+    z-index: 666;
+
+}
+.nav .navItem a{
+    float: left;
+    font-size:16px;
+    text-align:center;
+    padding:0 15px;
+    position:relative;
+    cursor:pointer;
+    height:35px;
+}
+.nav .navItem.downnav a{
+    padding:0 40px 0 15px;
+}
+.downnav a .icon{
+    position: absolute;
+    display:block;
+    width:25px;
+    height:25px;
+    right: 6px;
+    top: 0;
+    background:url(../images/nav_xiajiantou.png) no-repeat;
+    z-index: 666;
+}
+.navItem a:hover{
+    background:url(../images/nav_now_bg.png) no-repeat bottom center;
+}
+.now a{
+    background:url(../images/nav_now_bg.png) no-repeat bottom center;}
+.navItem ul{
+    font-size:16px;
+    position:absolute;
+    left:-16px;
+    top:35px;
+    width:180px;
+    line-height:40px;
+    background:#36264a;
+    color:#fff;
+    cursor:pointer;
+    z-index:666;
+    display:none;
+}
+/*.nav .navItem.downnav:hover  ul {
+  display: block;
+}*/
+
+.navItem ul li{
+    text-align:left;
+    padding-left:30px;
+}
+.navItem ul li:hover{
+    color:#fff;
+    padding-left:40px;
+    transition: padding-left 0.4s ease 0s;
+    background:#3498db url(../images/nav_li_bg.png) no-repeat 165px 15px;;
+}
+/*头部导航部分结束*/
+
+/*主要内容区开始*/
+.content-wrap{
+    width: 780px;
+    margin: 0 auto;
+    padding: 0 160px 230px 160px;
+    background: #fff;
+}
+.bufen >img{
+    margin: 0 auto;
+    display: block;
+}
+.bufen >h1, .bufen >h2 {
+    text-align: center;
+    font-size:54px;
+    color:#311759;
+}
+.bufen >h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    letter-spacing:6px;
+}
+.content-wrap .list-name{
+    font-size: 30px;
+    color: #311759;
+    height: 70px;
+    line-height: 70px;
+    background:url("../images/list-namebg.png") no-repeat 0 bottom ;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.list-name .pen{
+    width: 60px;
+    height: 58px;
+    background:#fff url("../images/pen_article.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top:17px;
+    cursor: pointer;
+}
+.list-name .pen:hover{
+    background-position:-62px 0 ;
+}
+.watcher{
+    padding-top:16px;
+    color:#6b6a6f;
+    margin-bottom: 60px;
+}
+.watcher span{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-right: 14px;
+}
+
+.likebtn-wrap{
+    width: 73px;
+    height: 73px;
+    margin: 104px 0 0 350px;
+
+}
+.likebtn-show{
+    width: 218px;
+}
+.likebtn{
+    width: 73px;
+    height: 73px;
+    float: left;
+    background:url("../images/article_iflike.png") ;
+    cursor: pointer;
+}
+.likebtn-wrap .likebtn-clicked{
+    background-position:0 -73px;
+    cursor:default;
+    transition: all 0.5s ease 0s;}
+.likenumber{
+    width: 130px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    background: url("../images/article_iflike_nomberbg.png") no-repeat;
+    margin:20px 0 0 5px;
+    float: left;
+    padding-left: 5px;
+}
+
+.like-tip-wrap{
+    position: relative;
+    margin:54px auto 0;
+}
+
+.like-tip{
+    position: absolute;
+    left:254px;
+    width: 254px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    color: #311859;
+    background: #f1f2f6;
+    text-align: center;
+    border-radius: 8px;
+    display:none;
+}
+.link-footer-img{
+    background:#fff url(../images/map_bottomimg.png) top center no-repeat;
+    height: 33px;
+    width: 100%;
+    min-width: 1100px;
+}

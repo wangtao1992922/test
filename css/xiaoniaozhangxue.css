@@ -1,0 +1,495 @@
+*{
+    padding:0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: #f1f2f6;
+}
+/*头部开始*/
+.head-wrap{
+    background: #322246 url("../images/xiaoniaozhangxue/zx-navbg.png") no-repeat top center;
+    min-width: 1100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+.head{
+    width: 1100px;
+    margin:0 auto;
+    height: 50px;
+}
+.head .logo{
+    float: left;
+}
+.head .nav{
+    width: 930px;
+    float:right;
+    height: 25px;
+    line-height: 25px;
+    padding-top:12px;
+
+}
+.nav-piece{
+    float: left;
+    cursor: pointer;
+
+}
+.nav-piece h1{
+    padding: 0 15px;
+    text-align: center;
+     color:#aeabb4;
+    font-size: 16px;
+    font-family: "华文楷体";
+}
+.nav-piece h1:hover{
+    background: url("../images/xiaoniaozhangxue/nav_now_bg.png") no-repeat bottom center;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.now{
+    background: url("../images/xiaoniaozhangxue/nav_now_bg.png") no-repeat bottom center;
+    color: #fff;
+}
+
+/*动画欢迎部分开始*/
+.wrap-block{
+    width: 100%;
+    min-width: 1100px;
+    position: relative;
+    overflow: hidden;
+}
+.welcome-wrap{
+    width: 100%;
+    min-width: 1100px;
+    position: fixed;
+    left:0;
+    top:0;
+    color: #fff;
+    background-color:#299ad6;
+    z-index:999;
+    /*padding-top:50px;*/
+     height:900px;
+}
+.welcome2-wrap{
+    width:100%;
+    min-width:1100px;
+    background-color:#221236;
+    color:#fff;
+    min-height:600px;
+
+}
+.welcome-content{
+    position: absolute;
+    top:40%;
+    width:100%;
+    height: 560px;
+    margin-top: -230px;
+    text-align: center;
+}
+.next{
+    width: 58px;
+    height: 58px;
+    background: url("../images/xiaoniaozhangxue/donext.png") no-repeat 0 -58px;
+    cursor: pointer;
+    margin: 20px  auto 0;
+}
+.next:hover{
+    background-position: 0 0px;
+    transition: all 0.4s ease 0s;
+}
+.text-box >h1{
+    font-size: 44px;
+    color: #fefefe;
+    margin-bottom: 5px;
+}
+.text-box >h2{
+    font-size: 16px;
+    color: #fefefe;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+
+.big-title{
+    padding-top: 15px;
+    position: relative;
+    width: 490px;
+    height: 54px;
+    margin: 0 auto;
+}
+.big-title span{
+    font-size: 48px;
+    line-height: 48px;
+
+}
+.big-title .zuo-yinhao{
+    position: absolute;
+    left: -8px;
+    top:0px;
+
+}
+.big-title .you-yinhao{
+    position: absolute;
+    bottom: -13px;
+    right: -2px;
+}
+.text-box p{
+    font-size: 20px;
+}
+.welcome-content .text{
+    display: none;
+}
+
+.main-box{
+    width:100%;
+    min-width:1100px;
+    background:#fff;
+    position:relative;
+
+}
+.main-move{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+
+}
+/*概述模块开始*/
+.gaishu-move{
+    width: 4800px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.gaishu-block{
+    background: #fff;
+    float: left;
+    width: 1100px;
+    height: 845px;
+    position: relative;
+}
+.gaishu-content{
+    position:absolute;
+    top:40%;
+    width:100%;
+    height: 845px;
+    margin-top: -200px;
+    text-align: center;
+}
+.gaishu-content .title{
+    font-size: 54px;
+    color: #311759;
+    font-weight: bold;
+}
+.gaishu-content .big-title{
+    margin: 30px auto 0;
+    position: relative;
+}
+.gaishu-content .big-title .zuo-yinhao{
+    position: absolute;
+    top:0px;
+    left:-30px;
+}
+.gaishu-content .big-title .you-yinhao{
+    position: absolute;
+    right:-180px;
+    bottom: -30px;
+}
+.gaishu-content .big-title span{
+    display: inline-block;
+    font-size:18px;
+    color: #6b6a6f;
+    width: 636px;
+    line-height: 30px;
+}
+.gaishu-content .app-images img{
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.gaishu02 .gaishu-content{
+    width: 700px;
+    position: absolute;
+    left:50%;
+    margin-left: -350px;
+    text-align: left;
+}
+.gaishu02 .item{
+    margin-top:50px;
+    overflow:hidden;
+    color:#6b6a6f;
+}
+.gaishu02 .item img{
+    float: left;
+}
+.gaishu02 .item .text{
+    float: left;
+    width:520px;
+    margin-left:55px;
+}
+.gaishu02 .item .text h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin-top:20px;
+}
+.gaishu02 .item .text h2{
+    font-size:18px;
+    font-weight:normal;
+}
+
+.gaishu03 p{
+    width:730px;
+    margin:55px auto 0;
+    line-height:30px;
+    font-size:18px;
+    color:#6b6a6f;
+    text-align:left;
+    text-indent:2em;
+}
+.gaishu03 .gaishu-content  .big-title span {
+    color:#221236;
+    font-size:36px;
+}
+.gaishu03 .big-title .zuo-yinhao{
+    position:relative;
+    left:-115px;
+    top:6px;
+}
+.gaishu03 .big-title .you-yinhao{
+    position:relative;
+    right:-260px;
+    top:0px;
+}
+
+.gaishu .go-left, .gaishu .go-right{
+    width:58px;
+    height:58px;
+    background:url("../images/xiaoniaozhangxue/goleft.png") no-repeat;
+    position:absolute;
+    top:50%;
+    margin-top:-29px;
+    cursor:pointer;
+}
+.gaishu .go-left{
+    left: 60px;
+}
+.gaishu .go-right{
+    right: 60px;
+    background: url("../images/xiaoniaozhangxue/goright.png") no-repeat -58px 0;
+}
+.gaishu .go-left:hover{
+    background-position: -58px 0;
+    transition: all 0.5s ease 0s;
+}
+.gaishu .go-right:hover{
+    background-position: 0 0;
+    transition: all 0.5s ease 0s;
+}
+
+/*掌学对企业的价值开始*/
+.value{
+    color: #fff;
+    background: #221236;
+}
+.value_content{
+    width: 970px;
+    height: 540px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -285px;
+    margin-left: -485px;
+}
+.value_content h1{
+    font-size: 48px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.value_topborder, .value_bottomborder{
+    overflow:hidden;
+    margin:10px 0;
+}
+.value_topborder> div, .value_bottomborder> div{
+    float:left;
+    height:20px;
+    width:20px;
+    position:relative;
+}
+.value_topborder img, .value_bottomborder img{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.value_shineImg{
+    display:none;
+}
+
+.value_content .text{
+    width:850px;
+    height: 320px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.value_content .text .text_one{
+    float: left;
+    width: 390px;
+    margin-right:30px;
+    margin-bottom: 46px;
+
+}
+.value_content .text_one .number{
+    width: 74px;
+    height: 74px;
+    line-height: 74px;
+    background: url("../images/xiaoniaozhangxue/jiazhi_quanquan.png") no-repeat;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    float: left;
+    margin-right: 27px;
+}
+.value_content .text_one p{
+    width: 280px;
+    float: left;
+    margin-top: 16px;
+   font-size: 18px;
+}
+
+/*小鸟掌云开始*/
+.zhangyun{
+    background: #f1f2f6;
+}
+.zhangyun_content{
+    width: 910px;
+    height: 564px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -455px;
+}
+.zhangyun_content h1{
+    font-size: 48px;
+    color: #221236;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.zhangyun_content .content_movebox{
+    width: 910px;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+}
+.zhangyun_content .content_move{
+    width: 1820px;
+    height: 410px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.zhangyun_content .content_move>div{
+    width: 910px;
+    line-height:36px;
+    font-size: 16px;
+    font-family:KaiTi_GB2312;
+    color:#535355;
+    float: left;
+    background: url("../images/xiaoniaozhangxue/xuxian_bg.png");
+}
+.zhangyun_content .content_move p{
+    text-indent: 2em;
+}
+.zhangyun_content .btn_box{
+    width:206px;
+    height: 8px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+.zhangyun_content .btn_box >div{
+    width: 78px;
+    height: 8px;
+    border-radius: 4px;
+     margin: 0 12px;
+    background: url("../images/xiaoniaozhangxue/xiaoniaoyun_btn.png") 0 -8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+}
+.zhangyun_content .btn_box .btn{
+    width: 78px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: -78px;
+    background:url("../images/xiaoniaozhangxue/xiaoniaoyun_btn.png") 0 0 ;
+    transition: all 0.5s ease 0s;
+}
+.zhangyun_content .btn_box .now{
+    transition: all 0.5s ease 0s;
+}
+
+/*App和联系我们*/
+.app_and_contact{
+    background: url("../images/xiaoniaozhangxue/app&contacts_bg.gif") no-repeat center center;
+}
+.app_and_contact_content{
+    width: 910px;
+    height: 560px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -485px;
+    margin-top: -285px;
+}
+.app_content{
+    position: relative;
+    margin-top: 30px;
+}
+.app_content h1, .app_content p{
+  color: #fff;
+}
+.app_content h1{
+    position: absolute;
+    left: 430px;
+    top:120px;
+}
+.app_content p{
+    position: absolute;
+    top:0;
+    left:83px
+}
+.contact_content{
+    float: right;
+}
+.contact_content h1{
+    width: 380px;
+    color: #191919;
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+    background: url("../images/xiaoniaozhangxue/contacts_line.png") no-repeat left bottom;
+    margin-bottom: 20px;
+}
+.contact_content p{
+    font-size: 18px;
+    color: #191919;
+    line-height: 36px;
+}/*联系我们结束*/
