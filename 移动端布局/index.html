@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>移动端布局练习</title>
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = window.innerWidth/7.5 + "px";
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 7.5rem;
+            margin:0 auto;
+            border: none;
+        }
+        .head{
+            width:100%;
+            background: #fd5621;
+            color: #fff;
+            padding-left:0.36rem;
+            font-size: 0.4rem;
+            height:1.3rem;
+            padding-top: 0.4rem;
+            box-sizing: border-box;
+        }
+        .head >span{
+            height: 0.5rem;
+            width: 0.5rem;
+            text-align: center;
+        }
+        .head >a{
+            margin-left: 0.6rem;
+
+        }
+        .content{
+            padding-top: 0.44rem;
+           background: #f1f5f8;
+            overflow: hidden;
+        }
+        .plus{
+            width: 1.5rem;
+            height: 1.5rem;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto 0.52rem auto;
+            box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .plus img{
+            float: left;
+            width: 0.38rem;
+            margin: 0.56rem 0 0 0.56rem;
+        }
+        .content input{
+            height: 1.1rem;
+            line-height: 1.1rem;
+            width: 6.1rem;
+            border: none 0;
+            box-shadow: 0 0 0px 2px rgba(0,0,0,0.1);
+            margin-left: 0.7rem;
+            border-radius: 2px;
+            outline: none;
+            padding-left: 0.4rem;
+            box-sizing: border-box;
+            font-size: 0.3rem;
+            margin-bottom: 0.2rem;
+            float: left;
+        }
+        .tip{
+            background: #fe5722;
+            color: #fff;
+            font-size: 0.42rem;
+            width:6.1rem;
+            height:1.1rem;
+            text-align:center;
+            line-height:1.1rem;
+            margin-left:0.7rem;
+            border-radius: 2px;
+            float: left;
+            margin-top: 0.26rem;
+
+        }
+        .footer{
+            font-size: 0.3rem;
+            width:6.1rem;
+            height:1.1rem;
+            text-align:center;
+            line-height:1.1rem;
+            margin-left:0.7rem;
+            float: left;
+            margin-top: 0.24rem;
+            color: #898989;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head">
+            <span>&lt;</span>
+            <a >Sign Up</a>
+        </div>
+        <div class="content">
+            <div class="plus"><img src="img/plus-icon.png" alt=""/></div>
+            <input placeholder="Email" type="text"/>
+            <input placeholder="Username" type="text"/>
+            <input placeholder="Password" type="text"/>
+            <input placeholder="Confirm Password" type="text"/>
+            <input placeholder="Full Name" type="text"/>
+        </div>
+        <div class="tip">CREATE ACCOUNT</div>
+        <div class="footer">already have an account?</div>
+    </div>
+
+</body>
+</html>
